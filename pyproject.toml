@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "kagglehub>=0.3.12",
     "pandas>=2.2.3",
+    "pycountry>=24.6.1",
     "seaborn>=0.13.2",
     "selenium>=4.31.0",
 ]

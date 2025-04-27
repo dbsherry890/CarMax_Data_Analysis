@@ -1,6 +1,7 @@
 import pandas as pd
 import kagglehub
 from pathlib import Path
+import pycountry
 
 
 class Data():
@@ -13,4 +14,12 @@ class Data():
 
 
 if __name__ == '__main__':
-    my_data = Data("aiaiaidavid/the-big-dataset-of-ultra-marathon-running")
+    # my_data = Data("aiaiaidavid/the-big-dataset-of-ultra-marathon-running")
+    # print(my_data.get_df().head(4))
+    results = []
+    for country in pycountry.countries:
+        results.append([country.name, country.alpha_3])
+
+    df = pd.DataFrame(results, columns=['Country', 'Code'])
+    df.to_csv("country_codes.csv")
+    # print(df)
