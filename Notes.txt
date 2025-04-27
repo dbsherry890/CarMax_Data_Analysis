@@ -1,2 +1,0 @@
-Split Jupyter Notebook into categorical and quantitative analysis
-Button on BI report that will google make, model and year
